@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>urls.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #a9b7c6;}
+.s1 { color: #cc7832;}
+.s2 { color: #6a8759;}
+.ln { color: #606366; font-weight: normal; font-style: normal; }
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+urls.py</font>
+</center></td></tr></table>
+<pre><a name="l1"><span class="ln">1    </span></a>
+<a name="l2"><span class="ln">2    </span></a><span class="s1">from </span><span class="s0">django.urls </span><span class="s1">import </span><span class="s0">path</span>
+<a name="l3"><span class="ln">3    </span></a><span class="s1">from </span><span class="s0">. </span><span class="s1">import </span><span class="s0">views</span>
+<a name="l4"><span class="ln">4    </span></a>
+<a name="l5"><span class="ln">5    </span></a><span class="s0">urlpatterns = [</span>
+<a name="l6"><span class="ln">6    </span></a>
+<a name="l7"><span class="ln">7    </span></a>    <span class="s0">path(</span><span class="s2">''</span><span class="s1">,</span><span class="s0">views.add</span><span class="s1">,</span><span class="s0">name=</span><span class="s2">'add'</span><span class="s0">)</span><span class="s1">,</span>
+<a name="l8"><span class="ln">8    </span></a>    <span class="s0">path(</span><span class="s2">'delete/&lt;int:taskid&gt;/'</span><span class="s1">,</span><span class="s0">views.delete</span><span class="s1">,</span><span class="s0">name=</span><span class="s2">'delete'</span><span class="s0">)</span><span class="s1">,</span>
+<a name="l9"><span class="ln">9    </span></a>    <span class="s0">path(</span><span class="s2">'update/&lt;int:id&gt;/'</span><span class="s1">, </span><span class="s0">views.update</span><span class="s1">, </span><span class="s0">name=</span><span class="s2">'update'</span><span class="s0">)</span>
+<a name="l10"><span class="ln">10   </span></a>
+<a name="l11"><span class="ln">11   </span></a><span class="s0">]</span></pre>
+</body>
+</html>
